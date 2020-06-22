@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200622 11:29:48.205" rpa="false">
+<suite id="s1" name="ClashTestBot" source="C:\Users\Pichau\PycharmProjects\clash-royale\Tests\ClashTestBot.robot">
+<test id="s1-t1" name="Expected Path">
+<kw name="Prepare Browser" library="Resources" type="setup">
+<kw name="Register Info" library="CustomLibrary">
+<arguments>
+<arg>Opening browser ${BROWSER}, URL: ${URL}</arg>
+</arguments>
+<msg timestamp="20200622 11:29:48.393" level="INFO">Opening browser chrome, URL: https://developer.clashroyale.com</msg>
+<status status="PASS" starttime="20200622 11:29:48.393" endtime="20200622 11:29:48.393"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200622 11:29:48.393" level="INFO">Opening browser 'chrome' to base url 'https://developer.clashroyale.com'.</msg>
+<status status="PASS" starttime="20200622 11:29:48.393" endtime="20200622 11:29:53.085"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200622 11:29:53.085" endtime="20200622 11:29:54.196"></status>
+</kw>
+<kw name="Register Info" library="CustomLibrary">
+<arguments>
+<arg>Browser ready.</arg>
+</arguments>
+<msg timestamp="20200622 11:29:54.197" level="INFO">Browser ready.</msg>
+<status status="PASS" starttime="20200622 11:29:54.196" endtime="20200622 11:29:54.197"></status>
+</kw>
+<status status="PASS" starttime="20200622 11:29:48.392" endtime="20200622 11:29:54.197"></status>
+</kw>
+<kw name="Open Login Fields" library="Resources">
+<kw name="Register Info" library="CustomLibrary">
+<arguments>
+<arg>Opening login fields...</arg>
+</arguments>
+<msg timestamp="20200622 11:29:54.198" level="INFO">Opening login fields...</msg>
+<status status="PASS" starttime="20200622 11:29:54.197" endtime="20200622 11:29:54.198"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>//*[@data-reactid='.0.2.0.0.0.0.2.0.2']</arg>
+</arguments>
+<status status="PASS" starttime="20200622 11:29:54.198" endtime="20200622 11:29:54.221"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@data-reactid='.0.2.0.0.0.0.2.0.2']</arg>
+</arguments>
+<msg timestamp="20200622 11:29:54.221" level="INFO">Clicking element '//*[@data-reactid='.0.2.0.0.0.0.2.0.2']'.</msg>
+<status status="PASS" starttime="20200622 11:29:54.221" endtime="20200622 11:29:54.271"></status>
+</kw>
+<kw name="Register Info" library="CustomLibrary">
+<arguments>
+<arg>Login fields ready.</arg>
+</arguments>
+<msg timestamp="20200622 11:29:54.272" level="INFO">Login fields ready.</msg>
+<status status="PASS" starttime="20200622 11:29:54.272" endtime="20200622 11:29:54.272"></status>
+</kw>
+<status status="PASS" starttime="20200622 11:29:54.197" endtime="20200622 11:29:54.272"></status>
+</kw>
+<kw name="Insert Valid Credentials" library="Resources">
+<kw name="Register Info" library="CustomLibrary">
+<arguments>
+<arg>Inserting valid credentials...</arg>
+</arguments>
+<msg timestamp="20200622 11:29:54.273" level="INFO">Inserting valid credentials...</msg>
+<status status="PASS" starttime="20200622 11:29:54.273" endtime="20200622 11:29:54.273"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>//*[@data-reactid='.0.2.0.1.0.0.0.0.1.1.1']</arg>
+</arguments>
+<status status="PASS" starttime="20200622 11:29:54.273" endtime="20200622 11:29:54.302"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@data-reactid='.0.2.0.1.0.0.0.0.1.1.1']</arg>
+<arg>${EMAIL VALUE}</arg>
+</arguments>
+<msg timestamp="20200622 11:29:54.302" level="INFO">Typing text 'matheusdossantosgimenez@gmail.com' into text field '//*[@data-reactid='.0.2.0.1.0.0.0.0.1.1.1']'.</msg>
+<status status="PASS" starttime="20200622 11:29:54.302" endtime="20200622 11:29:54.445"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>//*[@data-reactid='.0.2.0.1.0.0.0.0.1.2.1']</arg>
+</arguments>
+<status status="PASS" starttime="20200622 11:29:54.446" endtime="20200622 11:29:54.464"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@data-reactid='.0.2.0.1.0.0.0.0.1.2.1']</arg>
+<arg>${PASSWORD VALUE}</arg>
+</arguments>
+<msg timestamp="20200622 11:29:54.464" level="INFO">Typing text 'RpaTest123' into text field '//*[@data-reactid='.0.2.0.1.0.0.0.0.1.2.1']'.</msg>
+<status status="PASS" starttime="20200622 11:29:54.464" endtime="20200622 11:29:54.543"></status>
+</kw>
+<kw name="Register Info" library="CustomLibrary">
+<arguments>
+<arg>Valid credentials inserted.</arg>
+</arguments>
+<msg timestamp="20200622 11:29:54.543" level="INFO">Valid credentials inserted.</msg>
+<status status="PASS" starttime="20200622 11:29:54.543" endtime="20200622 11:29:54.543"></status>
+</kw>
+<status status="PASS" starttime="20200622 11:29:54.272" endtime="20200622 11:29:54.543"></status>
+</kw>
+<kw name="Confirm Login" library="Resources">
+<kw name="Register Info" library="CustomLibrary">
+<arguments>
+<arg>Searching login button...</arg>
+</arguments>
+<msg timestamp="20200622 11:29:54.544" level="INFO">Searching login button...</msg>
+<status status="PASS" starttime="20200622 11:29:54.544" endtime="20200622 11:29:54.544"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>//*[@data-reactid='.0.2.0.1.0.0.0.0.1.3.0']</arg>
+</arguments>
+<status status="PASS" starttime="20200622 11:29:54.544" endtime="20200622 11:29:54.563"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@data-reactid='.0.2.0.1.0.0.0.0.1.3.0']</arg>
+</arguments>
+<msg timestamp="20200622 11:29:54.563" level="INFO">Clicking element '//*[@data-reactid='.0.2.0.1.0.0.0.0.1.3.0']'.</msg>
+<status status="PASS" starttime="20200622 11:29:54.563" endtime="20200622 11:29:54.613"></status>
+</kw>
+<kw name="Register Info" library="CustomLibrary">
+<arguments>
+<arg>Login button founded and clicked.</arg>
+</arguments>
+<msg timestamp="20200622 11:29:54.613" level="INFO">Login button founded and clicked.</msg>
+<status status="PASS" starttime="20200622 11:29:54.613" endtime="20200622 11:29:54.613"></status>
+</kw>
+<status status="PASS" starttime="20200622 11:29:54.544" endtime="20200622 11:29:54.613"></status>
+</kw>
+<kw name="Open My Account" library="Resources">
+<kw name="Register Info" library="CustomLibrary">
+<arguments>
+<arg>Selecting "My Account" option.</arg>
+</arguments>
+<msg timestamp="20200622 11:29:54.614" level="INFO">Selecting "My Account" option.</msg>
+<status status="PASS" starttime="20200622 11:29:54.614" endtime="20200622 11:29:54.614"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>//*[@id='content']/div/div[2]/div/header/div/div/div[3]/div/div/button/span[1]</arg>
+</arguments>
+<status status="PASS" starttime="20200622 11:29:54.614" endtime="20200622 11:29:55.246"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id='content']/div/div[2]/div/header/div/div/div[3]/div/div/button/span[1]</arg>
+</arguments>
+<msg timestamp="20200622 11:29:55.246" level="INFO">Clicking element '//*[@id='content']/div/div[2]/div/header/div/div/div[3]/div/div/button/span[1]'.</msg>
+<status status="PASS" starttime="20200622 11:29:55.246" endtime="20200622 11:29:55.278"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>//*[@id='content']/div/div[2]/div/header/div/div/div[3]/div/div/ul/li[1]/a</arg>
+</arguments>
+<status status="PASS" starttime="20200622 11:29:55.278" endtime="20200622 11:29:55.296"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id='content']/div/div[2]/div/header/div/div/div[3]/div/div/ul/li[1]/a</arg>
+</arguments>
+<msg timestamp="20200622 11:29:55.296" level="INFO">Clicking element '//*[@id='content']/div/div[2]/div/header/div/div/div[3]/div/div/ul/li[1]/a'.</msg>
+<status status="PASS" starttime="20200622 11:29:55.296" endtime="20200622 11:29:55.356"></status>
+</kw>
+<kw name="Register Info" library="CustomLibrary">
+<arguments>
+<arg>"My Account" option selected.</arg>
+</arguments>
+<msg timestamp="20200622 11:29:55.356" level="INFO">"My Account" option selected.</msg>
+<status status="PASS" starttime="20200622 11:29:55.356" endtime="20200622 11:29:55.357"></status>
+</kw>
+<status status="PASS" starttime="20200622 11:29:54.613" endtime="20200622 11:29:55.357"></status>
+</kw>
+<kw name="Open Register Key Fields" library="Resources">
+<kw name="Register Info" library="CustomLibrary">
+<arguments>
+<arg>Opening register key fields...</arg>
+</arguments>
+<msg timestamp="20200622 11:29:55.358" level="INFO">Opening register key fields...</msg>
+<status status="PASS" starttime="20200622 11:29:55.357" endtime="20200622 11:29:55.358"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>//*[@id='content']/div/div[2]/div/div/section[2]/div/div/div[2]/p/a/span[2]</arg>
+</arguments>
+<status status="PASS" starttime="20200622 11:29:55.358" endtime="20200622 11:29:55.376"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id='content']/div/div[2]/div/div/section[2]/div/div/div[2]/p/a/span[2]</arg>
+</arguments>
+<msg timestamp="20200622 11:29:55.377" level="INFO">Clicking element '//*[@id='content']/div/div[2]/div/div/section[2]/div/div/div[2]/p/a/span[2]'.</msg>
+<status status="PASS" starttime="20200622 11:29:55.376" endtime="20200622 11:29:55.440"></status>
+</kw>
+<kw name="Register Info" library="CustomLibrary">
+<arguments>
+<arg>Register key fields are ready.</arg>
+</arguments>
+<msg timestamp="20200622 11:29:55.441" level="INFO">Register key fields are ready.</msg>
+<status status="PASS" starttime="20200622 11:29:55.440" endtime="20200622 11:29:55.441"></status>
+</kw>
+<status status="PASS" starttime="20200622 11:29:55.357" endtime="20200622 11:29:55.441"></status>
+</kw>
+<kw name="Insert Key Values" library="Resources">
+<kw name="Register Info" library="CustomLibrary">
+<arguments>
+<arg>Inserting key values...</arg>
+</arguments>
+<msg timestamp="20200622 11:29:55.442" level="INFO">Inserting key values...</msg>
+<status status="PASS" starttime="20200622 11:29:55.442" endtime="20200622 11:29:55.442"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>//*[@id='name']</arg>
+</arguments>
+<status status="PASS" starttime="20200622 11:29:55.442" endtime="20200622 11:29:55.460"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id='name']</arg>
+<arg>${KEY NAME VALUE}</arg>
+</arguments>
+<msg timestamp="20200622 11:29:55.461" level="INFO">Typing text 'MrRobotKey_1' into text field '//*[@id='name']'.</msg>
+<status status="PASS" starttime="20200622 11:29:55.460" endtime="20200622 11:29:55.555"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id='description']</arg>
+<arg>${DESCRIPTION VALUE}</arg>
+</arguments>
+<msg timestamp="20200622 11:29:55.556" level="INFO">Typing text 'Created to test.' into text field '//*[@id='description']'.</msg>
+<status status="PASS" starttime="20200622 11:29:55.555" endtime="20200622 11:29:55.651"></status>
+</kw>
+<kw name="Find Ip" library="CustomLibrary">
+<assign>
+<var>${IP ADDRESS}</var>
+</assign>
+<msg timestamp="20200622 11:29:56.652" level="INFO">${IP ADDRESS} = 187.56.109.5</msg>
+<status status="PASS" starttime="20200622 11:29:55.651" endtime="20200622 11:29:56.652"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id='range-0']</arg>
+<arg>${IP ADDRESS}</arg>
+</arguments>
+<msg timestamp="20200622 11:29:56.653" level="INFO">Typing text '187.56.109.5' into text field '//*[@id='range-0']'.</msg>
+<status status="PASS" starttime="20200622 11:29:56.653" endtime="20200622 11:29:56.746"></status>
+</kw>
+<kw name="Register Info" library="CustomLibrary">
+<arguments>
+<arg>Key values inserted.</arg>
+</arguments>
+<msg timestamp="20200622 11:29:56.746" level="INFO">Key values inserted.</msg>
+<status status="PASS" starttime="20200622 11:29:56.746" endtime="20200622 11:29:56.746"></status>
+</kw>
+<status status="PASS" starttime="20200622 11:29:55.442" endtime="20200622 11:29:56.746"></status>
+</kw>
+<kw name="Confirm Key Creation" library="Resources">
+<kw name="Register Info" library="CustomLibrary">
+<arguments>
+<arg>Confirming key creation...</arg>
+</arguments>
+<msg timestamp="20200622 11:29:56.747" level="INFO">Confirming key creation...</msg>
+<status status="PASS" starttime="20200622 11:29:56.747" endtime="20200622 11:29:56.747"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>//*[@id='content']/div/div[2]/div/div/section/div/div/div[2]/form/div[5]/button</arg>
+</arguments>
+<status status="PASS" starttime="20200622 11:29:56.747" endtime="20200622 11:29:56.765"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id='content']/div/div[2]/div/div/section/div/div/div[2]/form/div[5]/button</arg>
+</arguments>
+<msg timestamp="20200622 11:29:56.765" level="INFO">Clicking element '//*[@id='content']/div/div[2]/div/div/section/div/div/div[2]/form/div[5]/button'.</msg>
+<status status="PASS" starttime="20200622 11:29:56.765" endtime="20200622 11:29:56.814"></status>
+</kw>
+<kw name="Register Info" library="CustomLibrary">
+<arguments>
+<arg>Key creation is done.</arg>
+</arguments>
+<msg timestamp="20200622 11:29:56.814" level="INFO">Key creation is done.</msg>
+<status status="PASS" starttime="20200622 11:29:56.814" endtime="20200622 11:29:56.814"></status>
+</kw>
+<status status="PASS" starttime="20200622 11:29:56.747" endtime="20200622 11:29:56.814"></status>
+</kw>
+<kw name="Open Created Key" library="Resources">
+<kw name="Register Info" library="CustomLibrary">
+<arguments>
+<arg>Opening created key...</arg>
+</arguments>
+<msg timestamp="20200622 11:29:56.815" level="INFO">Opening created key...</msg>
+<status status="PASS" starttime="20200622 11:29:56.815" endtime="20200622 11:29:56.816"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>partial link:${KEY NAME VALUE}</arg>
+</arguments>
+<status status="PASS" starttime="20200622 11:29:56.816" endtime="20200622 11:29:57.482"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>partial link:${KEY NAME VALUE}</arg>
+</arguments>
+<msg timestamp="20200622 11:29:57.482" level="INFO">Clicking element 'partial link:MrRobotKey_1'.</msg>
+<status status="PASS" starttime="20200622 11:29:57.482" endtime="20200622 11:29:57.548"></status>
+</kw>
+<kw name="Register Info" library="CustomLibrary">
+<arguments>
+<arg>Created key found.</arg>
+</arguments>
+<msg timestamp="20200622 11:29:57.548" level="INFO">Created key found.</msg>
+<status status="PASS" starttime="20200622 11:29:57.548" endtime="20200622 11:29:57.548"></status>
+</kw>
+<status status="PASS" starttime="20200622 11:29:56.815" endtime="20200622 11:29:57.548"></status>
+</kw>
+<kw name="Register Members" library="Resources">
+<kw name="Register Info" library="CustomLibrary">
+<arguments>
+<arg>Searching for token value...</arg>
+</arguments>
+<msg timestamp="20200622 11:29:57.549" level="INFO">Searching for token value...</msg>
+<status status="PASS" starttime="20200622 11:29:57.549" endtime="20200622 11:29:57.549"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>//*[@id='content']/div/div[2]/div/div/section/div/div/div[2]/form/div[1]/div/samp</arg>
+</arguments>
+<status status="PASS" starttime="20200622 11:29:57.549" endtime="20200622 11:29:57.568"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id='content']/div/div[2]/div/div/section/div/div/div[2]/form/div[1]/div/samp</arg>
+</arguments>
+<assign>
+<var>${TOKEN}</var>
+</assign>
+<msg timestamp="20200622 11:29:57.583" level="INFO">${TOKEN} = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjE4MzZlODZiLWEzYjAtNGIxOS1iYzJiLTk...</msg>
+<status status="PASS" starttime="20200622 11:29:57.568" endtime="20200622 11:29:57.583"></status>
+</kw>
+<kw name="Register Info" library="CustomLibrary">
+<arguments>
+<arg>Token value found and extracted.</arg>
+</arguments>
+<msg timestamp="20200622 11:29:57.583" level="INFO">Token value found and extracted.</msg>
+<status status="PASS" starttime="20200622 11:29:57.583" endtime="20200622 11:29:57.583"></status>
+</kw>
+<kw name="Register Info" library="CustomLibrary">
+<arguments>
+<arg>Searching for clan tag...</arg>
+</arguments>
+<msg timestamp="20200622 11:29:57.583" level="INFO">Searching for clan tag...</msg>
+<status status="PASS" starttime="20200622 11:29:57.583" endtime="20200622 11:29:57.583"></status>
+</kw>
+<kw name="Find Clan Tag" library="CustomLibrary">
+<arguments>
+<arg>${API URL}</arg>
+<arg>${CLAN NAME}</arg>
+<arg>${CLAN PARTIAL TAG}</arg>
+<arg>${TOKEN}</arg>
+</arguments>
+<assign>
+<var>${CLAN TAG}</var>
+</assign>
+<msg timestamp="20200622 11:29:59.970" level="INFO">${CLAN TAG} = #9V2YV8YJ</msg>
+<status status="PASS" starttime="20200622 11:29:57.583" endtime="20200622 11:29:59.970"></status>
+</kw>
+<kw name="Register Info" library="CustomLibrary">
+<arguments>
+<arg>Clan tag founded.</arg>
+</arguments>
+<msg timestamp="20200622 11:29:59.970" level="INFO">Clan tag founded.</msg>
+<status status="PASS" starttime="20200622 11:29:59.970" endtime="20200622 11:29:59.970"></status>
+</kw>
+<kw name="Register Info" library="CustomLibrary">
+<arguments>
+<arg>Searching for clan members...</arg>
+</arguments>
+<msg timestamp="20200622 11:29:59.970" level="INFO">Searching for clan members...</msg>
+<status status="PASS" starttime="20200622 11:29:59.970" endtime="20200622 11:29:59.970"></status>
+</kw>
+<kw name="Find Clan Members" library="CustomLibrary">
+<arguments>
+<arg>${API URL}</arg>
+<arg>${CLAN TAG}</arg>
+<arg>${TOKEN}</arg>
+</arguments>
+<assign>
+<var>${CLAN MEMBERS}</var>
+</assign>
+<msg timestamp="20200622 11:30:01.022" level="INFO">${CLAN MEMBERS} = {'tag': '#9V2YV8YJ', 'name': 'The resistance', 'type': 'open', 'description': 'Clã focado na guerra, premiação com pass para o melhor nas guerras. (11) 976621815 Júnior', 'badgeId': 16000024, 'clanSco...</msg>
+<status status="PASS" starttime="20200622 11:29:59.971" endtime="20200622 11:30:01.022"></status>
+</kw>
+<kw name="Register Info" library="CustomLibrary">
+<arguments>
+<arg>Clan members founded.</arg>
+</arguments>
+<msg timestamp="20200622 11:30:01.023" level="INFO">Clan members founded.</msg>
+<status status="PASS" starttime="20200622 11:30:01.022" endtime="20200622 11:30:01.023"></status>
+</kw>
+<kw name="Register Info" library="CustomLibrary">
+<arguments>
+<arg>Registering clan members...</arg>
+</arguments>
+<msg timestamp="20200622 11:30:01.023" level="INFO">Registering clan members...</msg>
+<status status="PASS" starttime="20200622 11:30:01.023" endtime="20200622 11:30:01.023"></status>
+</kw>
+<kw name="Register Clan Members" library="CustomLibrary">
+<arguments>
+<arg>${CLAN MEMBERS}</arg>
+</arguments>
+<status status="PASS" starttime="20200622 11:30:01.023" endtime="20200622 11:30:01.024"></status>
+</kw>
+<kw name="Register Info" library="CustomLibrary">
+<arguments>
+<arg>Clan members registered.</arg>
+</arguments>
+<msg timestamp="20200622 11:30:01.024" level="INFO">Clan members registered.</msg>
+<status status="PASS" starttime="20200622 11:30:01.024" endtime="20200622 11:30:01.024"></status>
+</kw>
+<status status="PASS" starttime="20200622 11:29:57.549" endtime="20200622 11:30:01.024"></status>
+</kw>
+<kw name="Delete Key" library="Resources">
+<kw name="Register Info" library="CustomLibrary">
+<arguments>
+<arg>Cleaning created key...</arg>
+</arguments>
+<msg timestamp="20200622 11:30:01.025" level="INFO">Cleaning created key...</msg>
+<status status="PASS" starttime="20200622 11:30:01.025" endtime="20200622 11:30:01.025"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>//*[@id='content']/div/div[2]/div/div/section/div/div/div[2]/form/div[5]/button/span[1]</arg>
+</arguments>
+<status status="PASS" starttime="20200622 11:30:01.025" endtime="20200622 11:30:01.043"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id='content']/div/div[2]/div/div/section/div/div/div[2]/form/div[5]/button/span[1]</arg>
+</arguments>
+<msg timestamp="20200622 11:30:01.043" level="INFO">Clicking element '//*[@id='content']/div/div[2]/div/div/section/div/div/div[2]/form/div[5]/button/span[1]'.</msg>
+<status status="PASS" starttime="20200622 11:30:01.043" endtime="20200622 11:30:01.079"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>//*[@id='content']/div/div[2]/div/div/section[2]/div/div/div[2]/ul/div/span[3]</arg>
+</arguments>
+<status status="PASS" starttime="20200622 11:30:01.079" endtime="20200622 11:30:01.508"></status>
+</kw>
+<kw name="Register Info" library="CustomLibrary">
+<arguments>
+<arg>Key deleted.</arg>
+</arguments>
+<msg timestamp="20200622 11:30:01.508" level="INFO">Key deleted.</msg>
+<status status="PASS" starttime="20200622 11:30:01.508" endtime="20200622 11:30:01.508"></status>
+</kw>
+<status status="PASS" starttime="20200622 11:30:01.025" endtime="20200622 11:30:01.508"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200622 11:30:01.508" endtime="20200622 11:30:03.636"></status>
+</kw>
+<status status="PASS" starttime="20200622 11:29:48.392" endtime="20200622 11:30:03.636" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200622 11:29:48.207" endtime="20200622 11:30:03.637"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="ClashTestBot">ClashTestBot</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
